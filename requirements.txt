@@ -1,0 +1,11 @@
+torch>=1.4.0
+torchtext>=0.5.0
+tensorboard>=1.0.0
+CairoSVG>=2.4.2
+ortools>=7.5.7466
+scipy>=1.4.1
+pandas>=0.24.2
+matplotlib>=3.0.3
+numpy>=1.18.5
+grinpy>=19.7a0
+networkx>=2.4

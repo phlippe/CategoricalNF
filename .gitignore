@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Mac files
+.DS_Store
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Pictures
+*.png
+*.pdf
+*.jpg
+*.svg
+
+# Model description files
+*.json
+*.csv
+
+# Checkpoints
+*.tar
+*.pik
+*.npz
+*.npy
+*/checkpoints/*
+experiments/*/checkpoints/*
+!experiments/*/checkpoints/README.md
+
+# Tensorboard
+*events.out.tfevents*
+
+# Datasets
+experiments/*/data/*
+!experiments/*/data/README.md
+
+# Job files
+*.job
+*.txt
+experiments/language_modeling/jobs/
