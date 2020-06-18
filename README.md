@@ -1,5 +1,5 @@
 # Categorical Normalizing Flows
-This repository is the official implementation of "Categorical Normalizing Flows via Continuous Transformations". Please note that this is a simplified re-implementation of the original code used for the paper, and hence the exact scores for specific seeds can slightly differ.
+This repository is the official implementation of "[Categorical Normalizing Flows via Continuous Transformations](https://arxiv.org/abs/2006.09790)". Please note that this is a simplified re-implementation of the original code used for the paper, and hence the exact scores for specific seeds can slightly differ.
 
 ## Summary of the paper
 
