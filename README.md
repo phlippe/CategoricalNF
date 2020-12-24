@@ -4,7 +4,7 @@ This repository is the official implementation of "[Categorical Normalizing Flow
 ## Summary of the paper
 
 ### Abstract
-Despite their popularity, to date, the application of normalizing flows on categoricaldata stays limited. The current practice of using dequantization to map discretedata to a continuous space is inapplicable as categorical data has no intrinsic order. Instead, categorical data have complex and latent relations that must be inferred, like the synonymy between words. In this paper, we investigate Categorical Normalizing Flows, that is normalizing flows for categorical data. By casting theencoding of categorical data in continuous space as a variational inference problem, we jointly optimize the continuous representation and the model likelihood. To maintain unique decoding, we learn a partitioning of the latent space by factorizing the posterior. Meanwhile, the complex relations between the categorical variables are learned by the ensuing normalizing flow, thus maintaining a close-to exact likelihood estimate and making it possible to scale up to a large number ofcategories. Based on Categorical Normalizing Flows, we propose GraphCNF apermutation-invariant generative model on graphs, outperforming both one-shotand autoregressive flow-based state-of-the-art on molecule generation.
+Despite their popularity, to date, the application of normalizing flows on categorical data stays limited. The current practice of using dequantization to map discrete data to a continuous space is inapplicable as categorical data has no intrinsic order. Instead, categorical data have complex and latent relations that must be inferred, like the synonymy between words. In this paper, we investigate *Categorical Normalizing Flows*, that is normalizing flows for categorical data. By casting the encoding of categorical data in continuous space as a variational inference problem, we jointly optimize the continuous representation and the model likelihood. Using a factorized decoder, we introduce an inductive bias to model any interactions in the normalizing flow. As a consequence, we do not only simplify the optimization compared to having a joint decoder, but also make it possible to scale up to a large number of categories that is currently impossible with discrete normalizing flows. Based on Categorical Normalizing Flows, we propose GraphCNF a permutation-invariant generative model on graphs. GraphCNF implements a three step approach modeling the nodes, edges and adjacency matrix stepwise to increase efficiency. On molecule generation, GraphCNF outperforms both one-shot and autoregressive flow-based state-of-the-art.
   
 ### Visualizations
 
@@ -144,3 +144,14 @@ All content in this repository is licensed under the MIT license. Please feel fr
 This code is designed to be easily extended to new tasks and datasets.
 For details on how to add a new experiment task, see the README in the experiments folder.
 
+## Reference
+
+If you use the code or results in your research, please consider citing our work:
+```
+@article{lippe2020categorical,
+  title={Categorical Normalizing Flows via Continuous Transformations},
+  author={Lippe, Phillip and Gavves, Efstratios},
+  journal={arXiv preprint arXiv:2006.09790},
+  year={2020}
+}
+```
