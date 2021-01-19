@@ -148,10 +148,11 @@ For details on how to add a new experiment task, see the README in the experimen
 
 If you use the code or results in your research, please consider citing our work:
 ```
-@article{lippe2020categorical,
-  title={Categorical Normalizing Flows via Continuous Transformations},
-  author={Lippe, Phillip and Gavves, Efstratios},
-  journal={arXiv preprint arXiv:2006.09790},
-  year={2020}
+@inproceedings{lippe2021categorical,
+ author = {Phillip Lippe and Efstratios Gavves},
+ booktitle = {International Conference on Learning Representations},
+ title = {Categorical Normalizing Flows via Continuous Transformations},
+ url = {https://openreview.net/forum?id=-GLNZeVDuik},
+ year = {2021}
 }
 ```
